@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Responsiive Admin Dashboard | CodingLab </title>-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href=/../css/bootstrap.min.css>
+
+
+     <link rel="icon" href="images/logo.jpg">
+   
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', {
+            packages: ['corechart']
+        });
+    </script>
+   </head>
+<body style="background-color: whitesmoke;">
+  <div class="sidebar">
+    <div class="logo-details" style="margin-top: 70px;">
+      
+      <span class="logo_name"><img src="images/logo.jpg" style="width: 100px; height: 130px; margin-left: 70px;"></span>
+    </div>
+      <ul class="nav-links" style="margin-top: 120px;">
+        <li>
+          <a href="dashboard.html">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+        </li>
+      
+        <li>
+          <a href="Donors.html">
+            <i class='bx bx-heart' ></i>
+            <span class="links_name">Donors</span>
+          </a>
+        </li>
+
+         <li>
+          <a href="Donors' Personal Profile.html">
+            <i class='bx bx-user' ></i>
+            <span class="links_name" >Donors' Personal Profile</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#" class="active" style="background-color: lightgray; font-weight: bold;">
+            <i class='bx bx-pie-chart-alt-2' style="font-weight: bold;"></i>
+            <span class="links_name" style="font-weight: bold;">Stats and Bloodbank</span>
+          </a>
+        </li>
+        
+        <li class="log_out">
+          <a href="Faith New/index.html"> 
+            <i class='bx bx-log-out'></i>
+            <span class="links_name">Log out</span>
+          </a>
+        </li>
+      </ul>
+  </div>
+
+  <section class="home-section">
+    <nav style="background-color: red;">
+      <div class="sidebar-button" style="color: white;">
+        <i class='bx bx-menu sidebarBtn'></i>
+        <span class="dashboard" style="color: white; font-weight: bold;">Dashboard</span>
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Search...">
+        <i class='bx bx-search' ></i>
+      </div>
+      
+<div class="user-wrapper">
+      <img src="Images/LOGOO.jpg" width="40px" height="40px" alt="">
+      <div style="color: white;">
+        <h4>Skaila Matthews</h4>
+        <small>Super Admin</small>
+      </div>
+    </div>
+      
+      </div>
+    </nav>
+    <br><br><br><br>
+<br><br>
+
+<p style="border:15px; border-style:solid; border-color:#FF0000; padding: 1em; color: gray; margin: 20px;"><b style="color: navy; font-size: 16px;">Fun Fact!..</b><br>
+The<b>South African Blood Servise (SANBS)</b>collects more than 1 000 000 units of blood a year. Each unit of blood measures a little less than half and it is processed to produce various blood products. Every unit of blood is estimated to benefit three individuals and SANBS aims to collect 3 000 units each day.</p>
+
+<br><br>
+  <img src="images/images (14).jpg" align="left" style="width: 450px; height: 430px; margin-left: 170px;">
+<p style="color: navy; font-weight: bold; font-size: 25px; text-align: center;">Red blood cell compatibility table for different blood types.</p>
+
+
+<br><br>
+  <img src="images/12.jpg" align="right" style="width: 450px; height: 430px; margin-right: 170px; margin-top: 390px;">
+<p style="color: navy; font-weight: bold; font-size: 25px; text-align: center;">Red blood cell compatibility table for different blood types.</p>
+
+  </section>
+
+
+  <script>
+   let sidebar = document.querySelector(".sidebar");
+let sidebarBtn = document.querySelector(".sidebarBtn");
+sidebarBtn.onclick = function() {
+  sidebar.classList.toggle("active");
+  if(sidebar.classList.contains("active")){
+  sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+}else
+  sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+}
+ </script>
+
+</body>
+</html>
+
